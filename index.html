@@ -109,7 +109,7 @@
       opacity: 0.76;
     }
 
-    .logo-modal {
+        .brand-name,    .brand-sub {      display: inline-block;      width: fit-content;      max-width: 100%;      background: linear-gradient(110deg, #172033 0%, #172033 35%, #ffffff 48%, #9fb3d3 56%, #172033 68%, #172033 100%);      background-size: 220% 100%;      -webkit-background-clip: text;      background-clip: text;      -webkit-text-fill-color: transparent;      text-shadow: 0 12px 28px rgba(37, 99, 235, 0.14);      animation: brandShine 3.4s linear infinite;    }    .brand-sub {      animation-delay: 0.25s;    }    .brand-logo:hover .brand-name,    .brand-logo:hover .brand-sub {      animation-duration: 1.7s;    }    @keyframes brandShine {      from {        background-position: 120% 0;      }      to {        background-position: -120% 0;      }    }    @media (prefers-reduced-motion: reduce) {      .brand-name,      .brand-sub {        background: none;        -webkit-text-fill-color: currentColor;        text-shadow: none;        animation: none;      }    }    .logo-modal {
       position: fixed;
       inset: 0;
       z-index: 10;
